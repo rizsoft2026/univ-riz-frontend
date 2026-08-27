@@ -266,7 +266,7 @@ const SDUIndex = () => {
 
   return (
     <>
-      <PageMeta title="SDU ERP" />
+      <PageMeta title="UNIV-RIZ" />
 
       <div className="p-6 w-full mx-auto max-w-7xl 2xl:max-w-[1600px]">
 
@@ -281,7 +281,7 @@ const SDUIndex = () => {
               </div>
               <div className="relative z-10 max-w-xl">
                 <span className="px-3 py-1 bg-blue-500/30 border border-blue-400/20 text-blue-100 rounded-full text-xs font-bold uppercase tracking-wider">
-                  Welcome to SDU ERP
+                  Welcome to UNIV-RIZ
                 </span>
                 <h2 className="text-3xl font-extrabold mt-3 leading-tight tracking-tight">
                   Manage your curriculum masters efficiently.

@@ -42,7 +42,7 @@ const generateStudentId = (
   if (!st) return 'N/A';
 
   const getInitials = (name) => {
-    if (!name) return 'SDU';
+    if (!name) return 'UNIV';
     const words = name.split(' ').filter(Boolean);
     if (words.length === 1) return name.substring(0, 4).toUpperCase();
     return words.map((w) => w[0]).join('').toUpperCase().substring(0, 4);

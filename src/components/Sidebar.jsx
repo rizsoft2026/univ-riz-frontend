@@ -20,8 +20,10 @@ import {
   Link as LinkIcon,
   ChevronDown,
   ChevronUp,
-  Users
+  Users,
+  LogOut
 } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 
 export default function Sidebar({
   isSidebarOpen,
@@ -31,6 +33,7 @@ export default function Sidebar({
   isDarkMode,
   setIsDarkMode
 }) {
+  const navigate = useNavigate();
   const [openSections, setOpenSections] = useState({
     academicMasters: false,
     mappings: false,
@@ -56,7 +59,7 @@ export default function Sidebar({
             <GraduationCap className="w-6 h-6" />
           </div>
           <div>
-            <h1 className="text-lg font-bold text-slate-800 dark:text-white leading-tight">SDU ERP</h1>
+            <h1 className="text-lg font-bold text-slate-800 dark:text-white leading-tight">UNI-RIZ</h1>
             <span className="text-[10px] font-semibold text-slate-400 dark:text-slate-500 uppercase tracking-widest">Portal</span>
           </div>
         </div>
@@ -326,7 +329,22 @@ export default function Sidebar({
             </button>
           </div>
         </div>
+
       </nav>
+
+      {/* Logout Section */}
+      <div className="p-4 border-t border-slate-100 dark:border-slate-800">
+        <button
+          onClick={() => {
+            localStorage.removeItem('isAuthenticated');
+            navigate('/login');
+          }}
+          className="w-full flex items-center justify-center gap-2 px-4 py-2.5 text-sm font-semibold rounded-xl transition-all cursor-pointer text-white bg-red-500 hover:bg-red-600 shadow-sm shadow-red-500/20"
+        >
+          <LogOut className="w-4 h-4" />
+          Logout
+        </button>
+      </div>
 
       {/* Sidebar Footer Details */}
       <div className="p-4 border-t border-slate-100 dark:border-slate-800 flex items-center justify-between">
