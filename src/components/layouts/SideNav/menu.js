@@ -149,5 +149,52 @@ export const menuItemsData = [
     label: 'Student Curriculum Mapping',
     icon: LuGitBranch,
     href: '/sdu-erp?tab=studentCurriculumMapping'
+  },
+  {
+    key: 'StudentAttendance',
+    label: 'Student Attendance',
+    icon: LuUserCheck,
+    href: '#'
+  },
+  {
+    key: 'StudentEnrollment',
+    label: 'Student Enrollment',
+    icon: LuBookOpen,
+    href: '#'
+  },
+  {
+    key: 'StudentDocuments',
+    label: 'Student Documents',
+    icon: LuFolderGit,
+    href: '#'
+  },
+  {
+    key: 'header-teacher-master',
+    isHeader: true,
+    label: 'Teacher Master'
+  },
+  {
+    key: 'TeacherAttendance',
+    label: 'Teacher Attendance',
+    icon: LuUserCheck,
+    href: '#'
+  },
+  {
+    key: 'TeacherWorkload',
+    label: 'Teacher Workload',
+    icon: LuBookOpen,
+    href: '#'
+  },
+  {
+    key: 'TeacherTimetable',
+    label: 'Teacher Timetable',
+    icon: LuCalendar,
+    href: '#'
+  },
+  {
+    key: 'TeacherLeave',
+    label: 'Teacher Leave',
+    icon: LuUserCheck,
+    href: '#'
   }
 ];

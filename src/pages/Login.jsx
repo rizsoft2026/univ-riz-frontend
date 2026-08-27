@@ -8,8 +8,8 @@ import spaceBg from '@/assets/images/space_bg.jpg';
 
 const Login = () => {
   const navigate = useNavigate();
-  const [email, setEmail] = useState('admin@uniriz.com');
-  const [password, setPassword] = useState('12345678');
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
   const [showPassword, setShowPassword] = useState(false);
 
   const handleLogin = (e) => {
